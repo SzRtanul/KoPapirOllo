@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39775722-798a-46fb-970a-b446aa148366" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -52,7 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701728326090</updated>
       <workItem from="1701728335109" duration="1297000" />
-      <workItem from="1701812591490" duration="7519000" />
+      <workItem from="1701812591490" duration="8060000" />
+      <workItem from="1701861523468" duration="635000" />
     </task>
     <servers />
   </component>

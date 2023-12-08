@@ -34,7 +34,7 @@ if __name__ == '__main__':
     entry.pack()
 
 
-    La_name = tk.Label(text=f"{entry.get()}")
+    La_name=(tk.Label(text=f"{entry.get()}"))
     La_name.pack()
 
     frm_buttons = tk.Frame(window, relief=tk.RAISED, bd=2)
