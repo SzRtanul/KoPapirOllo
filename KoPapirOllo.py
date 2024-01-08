@@ -3,7 +3,7 @@ import time
 import random
 class KoPapirOllo:
     event = threading.Event()
-    subs: threading = []
+    subs: list[threading.Thread] = []
     x = 0
 
     ido: int = 0
@@ -17,16 +17,20 @@ class KoPapirOllo:
     ido = []
 
     def __init__(self):
-        th0 = threading.Thread(target=self.eventLoop())
-        th0.start()
+        #th0 = threading.Thread(target=self.eventLoop())
+        #th0.start()
         pass
+
     def indit(self):
         pass
+
     def mutat(self, mit: int):
         if (self.visszaSzamlalas > 0):
             self.jatekosMutat = mit
+
     def getEredmeny(self):
         return self.eredmeny
+
     def eventLoop(self):
         while True:
             self.event.set()
@@ -39,6 +43,9 @@ class KoPapirOllo:
                 print("event is set : " + str(self.x))
                 self.x += 1
                 self.event.clear()
+    def listenerAdd(self, fuggveny):
+        self.subs.append(threading.Thread(target=fuggveny))
+
     def menet(self, mutat):
         nyert = False
         gepMutat = (int)((random.random() * 3) + 1)

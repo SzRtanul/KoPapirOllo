@@ -1,19 +1,24 @@
 import tkinter as tk
 import time
 import threading
-
-global ido
+import KoPapirOllo
 
 
 def open_file(name: str):
     print(name)
 
 if __name__ == '__main__':
+    kJatek = KoPapirOllo.KoPapirOllo()
+    kJatek.listenerAdd(open_file("Kurva"))
+
+if False:
+    pass
+
+if __name__ == '__main__' and False:
     window = tk.Tk()
     greeting = tk.Label(text="Hello, Tkinter")
     greeting.pack()
     window.mainloop()
-    pass
 
     window2 = tk.Tk()
 
