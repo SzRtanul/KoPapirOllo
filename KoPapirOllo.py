@@ -1,6 +1,6 @@
 import threading
 import time
-
+import random
 class KoPapirOllo:
     event = threading.Event()
     subs: threading = []
@@ -13,6 +13,9 @@ class KoPapirOllo:
     visszaSzamlalas: int = 3
     jatekosok = []
 
+    allas = [0, 0]
+    ido = []
+
     def __init__(self):
         th0 = threading.Thread(target=self.eventLoop())
         th0.start()
@@ -24,7 +27,6 @@ class KoPapirOllo:
             self.jatekosMutat = mit
     def getEredmeny(self):
         return self.eredmeny
-
     def eventLoop(self):
         while True:
             self.event.set()
@@ -37,3 +39,7 @@ class KoPapirOllo:
                 print("event is set : " + str(self.x))
                 self.x += 1
                 self.event.clear()
+    def menet(self, mutat):
+        nyert = False
+        gepMutat = (int)((random.random() * 3) + 1)
+        return nyert
