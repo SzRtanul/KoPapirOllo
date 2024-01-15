@@ -9,7 +9,7 @@ def open_file(name: str):
 
 if __name__ == '__main__':
     kJatek = KoPapirOllo.KoPapirOllo()
-    kJatek.listenerAdd(open_file("Kurva"))
+    kJatek.listenerAdd(open_file("Teszt"))
 
 if False:
     pass
